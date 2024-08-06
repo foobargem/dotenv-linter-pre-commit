@@ -1,0 +1,6 @@
+- id: dotenv-linter-docker
+  name: dotenv-linter-docker
+  language: docker_image
+  entry: dotenvlinter/dotenv-linter:3.3.0
+  files: '\.env*'
+  excludes: '^.pre-commit-config.yaml$'
